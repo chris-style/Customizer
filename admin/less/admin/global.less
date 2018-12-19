@@ -1,0 +1,67 @@
+@onBgColor: #2fca6c;
+@offBgColor: #e9513a;
+
+.fpd-ad-switch {
+	position: relative;
+	width: 50px;
+	height: 25px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.fpd-ad-switch > input {
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	z-index: 0;
+	width: 1px;
+	height: 1px;
+}
+
+.fpd-ad-switch > div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #e9513a;
+	border-radius: 2px;
+	z-index: 5;
+}
+
+.fpd-ad-switch > div:before {
+	position: absolute;
+	right: 4px;
+	content: "NO";
+	color: #fff;
+	font-size: 10px;
+	margin-left: 3px;
+	line-height: 25px;
+}
+
+.fpd-ad-switch [type="checkbox"]:checked + div {
+	background: #2fca6c;
+}
+
+.fpd-ad-switch [type="checkbox"]:checked + div:before {
+	content: "YES";
+	left: 3px;
+}
+
+.fpd-ad-switch > div > span {
+	background: darken(@offBgColor, 20%);
+	display: inline-block;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	height: 17px;
+	width: 17px;
+	border-radius: 2px;
+	transition: all .1s ease-out;
+}
+
+.fpd-ad-switch [type="checkbox"]:checked + div > span {
+	background: darken(@onBgColor, 20%);
+	left: calc(~"100% - 4px");
+	transform: translateX(-100%);
+}

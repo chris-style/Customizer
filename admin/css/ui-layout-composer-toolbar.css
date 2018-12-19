@@ -1,0 +1,152 @@
+#fpd-composer-toolbar .radykal-tabs-content {
+	min-height: 300px;
+}
+
+#fpd-composer-toolbar .radykal-ace-editor {
+	height: 300px;
+}
+
+#fpd-update-preview-custom-css {
+	margin-top: 30px;
+}
+
+#fpd-available-modules .radykal-label,
+#fpd-available-actions .radykal-label,
+.radykal-dropzone .radykal-label {
+	cursor: move;
+}
+
+#fpd-actions-dropzones {
+	position: relative;
+	height: 400px;
+	width: 100%;
+}
+
+#fpd-actions-dropzones .radykal-dropzone {
+	position: absolute;
+	text-align: center;
+}
+
+#fpd-actions-dropzones .radykal-dropzone[data-zone="top"] {
+	left: calc(7% + 40px);
+	top: 15px;
+	width: calc(86% - 90px);
+	height: 40px;
+}
+
+#fpd-actions-dropzones .radykal-dropzone[data-zone="right"] {
+	right: 15px;
+	top: calc(7% + 55px);
+	width: 150px;
+	height: calc(86% - 120px);
+	text-align: right;
+}
+
+#fpd-actions-dropzones .radykal-dropzone[data-zone="right"] > *,
+#fpd-actions-dropzones .radykal-dropzone[data-zone="left"] > * {
+	display: block;
+}
+
+#fpd-actions-dropzones .radykal-dropzone[data-zone="right"] .ui-sortable-placeholder,
+#fpd-actions-dropzones .radykal-dropzone[data-zone="left"] .ui-sortable-placeholder {
+	height: 40px;
+	width: 5px;
+}
+
+#fpd-actions-dropzones .radykal-dropzone[data-zone="bottom"] {
+	left: calc(7% + 40px);
+	bottom: 15px;
+	width: calc(86% - 90px);
+	height: 40px;
+}
+
+#fpd-actions-dropzones .radykal-dropzone[data-zone="left"] {
+	left: 15px;
+	top: calc(7% + 55px);
+	width: 150px;
+	height: calc(86% - 120px);
+	text-align: left;
+}
+
+#fpd-actions-alignment .radykal-segment > div {
+	margin: 10px 0;
+}
+
+#fpd-actions-alignment i {
+	display: inline-block !important;
+	width: 150px;
+}
+
+#fpd-actions-alignment label {
+	margin-left: 20px;
+	display: inline-block;
+}
+
+#fpd-actions-alignment label input {
+	margin-right: 5px;
+}
+
+#fpd-actions-alignment label:first-child {
+	margin-left: 0;
+}
+
+#fpd-composer-toolbar div[data-id="colors"] {
+	position: relative;
+}
+
+#fpd-composer-toolbar div[data-id="colors"] .radykal-columns-two > div {
+	width: 400px;
+}
+
+#fpd-composer-toolbar i {
+	display: block;
+	margin: 5px 0;
+	font-weight: 200;
+}
+
+#fpd-composer-toolbar select,
+#fpd-composer-toolbar .select2,
+#fpd-composer-toolbar input[type="text"],
+#fpd-composer-toolbar input[type="number"] {
+	width: 100%;
+	height: 40px;
+	font-size: 14px;
+	box-shadow: none;
+	border-radius: 5px;
+}
+
+#fpd-composer-toolbar select:hover {
+	box-shadow: 0 1px 0 0 rgba(170,170,170,0.01);
+}
+
+#fpd-composer-toolbar i span[class^="fpd-icon-"] {
+	font-size: 18px;
+	margin-left: 5px;
+}
+
+#fpd-composer-toolbar i > .fpd-admin-tooltip {
+	vertical-align: sub;
+}
+
+#fpd-composer-toolbar .select2 {
+	background: #fff;
+}
+
+#fpd-composer-toolbar .select2-selection {
+	height: 100%;
+}
+
+#fpd-composer-toolbar .select2-container--default .select2-selection--single .select2-selection__rendered {
+	line-height: 37px;
+	height: 100%;
+}
+
+#fpd-composer-toolbar .select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 37px;
+}
+
+#fpd-composer-toolbar  input.wp-color-picker {
+	width: 65px !important;
+	height: 18px;
+	margin-right: 5px;
+}
